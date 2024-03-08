@@ -46,13 +46,13 @@ user_input = {
 }
 
 # Classification
-if st.sidebar.button('Bankruptcy Prevention'):
+if st.sidebar.button('Check Bankruptcy'):
     outputClass = bankruptcy_classification(user_input)
     if outputClass == 0:
         outputClass="Chances of Bankruptcy"
     else:
         outputClass = 'No chances of Bankruptcy'
-    st.success(f'Classified as:  { outputClass }')
+    st.success(f'There is :  { outputClass }')
 
 # Adding "Developed by Group - 1 (P318)" at the bottom right
 st.markdown(
